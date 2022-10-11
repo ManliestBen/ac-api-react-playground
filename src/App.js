@@ -19165,6 +19165,9 @@ function App() {
   return (
     <>
       <h1>Animal Crossing Villagers</h1>
+      {villagers.map(villager => 
+        <h2>{villager.name["name-USen"]}</h2>  
+      )}
     </>
   )
 }
