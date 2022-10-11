@@ -1,4 +1,5 @@
 import './App.css';
+import Villager from './components/Villager/Villager'
 
 function App() {
   const villagers = [
@@ -19166,7 +19167,7 @@ function App() {
     <>
       <h1>Animal Crossing Villagers</h1>
       {villagers.map(villager => 
-        <h2>{villager.name["name-USen"]}</h2>  
+        <Villager key={villager.id} villager={villager} />  
       )}
     </>
   )

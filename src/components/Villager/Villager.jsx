@@ -1,6 +1,9 @@
-const Villager = (props) => {
+const Villager = ({villager}) => {
   return (
-    <h2>Villager Component</h2>
+    <>
+      <h2>{villager.name["name-USen"]}</h2>
+      <img src={villager.image_uri} alt="" />
+    </>
   );
 }
 
